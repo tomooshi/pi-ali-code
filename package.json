@@ -1,0 +1,25 @@
+{
+  "name": "pi-ali-code",
+  "version": "1.0.0",
+  "description": "Alibaba Model Studio Coding Plan provider for pi — Qwen, GLM, Kimi, and MiniMax models",
+  "main": "index.ts",
+  "keywords": [
+    "pi",
+    "pi-agent",
+    "alibaba",
+    "dashscope",
+    "qwen",
+    "coding-plan",
+    "bailian",
+    "extension"
+  ],
+  "author": "Ricardo Nth",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ricardo-nth/pi-ali-code"
+  },
+  "peerDependencies": {
+    "@mariozechner/pi-coding-agent": ">=0.55.0"
+  }
+}
