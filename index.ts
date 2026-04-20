@@ -26,6 +26,16 @@ export default function (pi: ExtensionAPI) {
     api: "openai-completions",
     models: [
       {
+        id: "qwen3.6-plus",
+        name: "Qwen 3.6 Plus [Coding]",
+        reasoning: true,
+        input: ["text", "image"],
+        cost: { input: 0, output: 0, cacheRead: 0, cacheWrite: 0 },
+        contextWindow: 1000000,
+        maxTokens: 65536,
+        compat: { stringifyToolArguments: false, supportsDeveloperRole: false }
+      },
+      {
         id: "qwen3.5-plus",
         name: "Qwen 3.5 Plus [Coding]",
         reasoning: false,
@@ -89,7 +99,7 @@ export default function (pi: ExtensionAPI) {
         id: "kimi-k2.5",
         name: "Kimi K2.5 [Coding]",
         reasoning: true,
-        input: ["text"],
+        input: ["text", "image"],
         cost: { input: 0, output: 0, cacheRead: 0, cacheWrite: 0 },
         contextWindow: 262144,
         maxTokens: 32768,
